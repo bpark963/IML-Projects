@@ -1,0 +1,151 @@
+* {
+cursor: none;
+}
+
+@font-face {
+  font-family: "Lisbeth";
+  src: url("https://cdn.glitch.global/ffa1570d-2759-4df4-b133-7032011b57c9/Lisbeth_Display.otf?v=1683009502917");
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  src: url("https://cdn.glitch.global/ffa1570d-2759-4df4-b133-7032011b57c9/NeueHaasRegular.otf?v=1683009507638");
+}
+
+body {
+	background: linear-gradient(-45deg, #a960ee, #ff333d, #66D4FF, #ffcb57);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+  margin:5% 10%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+  font-family: "Lisbeth";
+  font-size:50px;
+  color:white;
+  
+  
+}
+
+h2 {
+  font-family:"NeueHaasGrotesk";
+  font-size:25px;
+  color:white;
+}
+
+p {
+  font-family:"NeueHaasGrotesk";
+  color:white;
+  
+}
+
+footer {
+  font-family:"NeueHaasGrotesk";
+  color:white; 
+  text-align:right;
+}
+
+a{
+  font-family:"NeueHaasGrotesk";
+  color: black;
+  background: #FFB715;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover{
+ box-shadow: inset 400px 0 0 0 #54b3d6;
+ color: white; 
+}
+
+iframe {
+  height:300px;
+}
+
+.read{
+  margin-bottom:50px;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.mscursor-cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;  
+}
+.mscursor-difference{
+  mix-blend-mode: difference;
+}
+.mscursor-circle {
+    transform-origin: center;
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+}
+.mscursor-border-transform{
+  animation: border-transform 3s linear infinite;
+}
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+.mscursor-scale{
+  transition: .5s ease;
+  transform: scale(1.6);
+}
+.mscursor-scale-outline{
+  transform:scale(1.9);
+  background-color: transparent !important;
+}
+
+.mscursor-nocursor{
+  cursor:none!important;
+}
+
+
