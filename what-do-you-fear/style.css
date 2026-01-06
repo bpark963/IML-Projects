@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "PublicPixel";
+  src: url(https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/publicPixel.ttf?v=1677709069868);
+}
+@font-face {
+  font-family: "BlueScreen";
+  src: url(https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/blueScreen.ttf?v=1677708776344);
+}
+
+body {
+  background-color:black;
+}
+
+p {
+  font-family: "PublicPixel";
+  color: white;
+  text-align: center;
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+h3 {
+  font-family: "PublicPixel";
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: "PublicPixel";
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: "PublicPixel";
+  color: white;
+  text-align: center;
+}
+
+a {
+  font-family: "BlueScreen";
+  color: white;
+  text-align: center;
+}
+
+a:hover {
+  color:red;
+  animation: cursorMove 0.9s infinite;
+}
+
+
+@keyframes cursorMove{
+  0%{
+    cursor: url("https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/walkinggifresize_0006_Layer-1.png?v=1678336398330") 20 20, auto;
+  }
+  20%{ 
+    cursor: url("https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/walkinggifresize_0005_Layer-2.png?v=1678336351089") 20 20, auto;
+  }
+  40%{ 
+    cursor: url("https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/walkinggifresize_0004_Layer-3.png?v=1678336353104") 20 20, auto;
+  }
+  60%{ 
+    cursor: url("https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/walkinggifresize_0003_Layer-4.png?v=1678336354618") 20 20, auto;
+  }
+  80%{ 
+    cursor: url("https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/walkinggifresize_0002_Layer-5.png?v=1678336357342") 20 20, auto;
+  }
+  100%{ 
+    cursor: url("https://cdn.glitch.global/5521f153-9f5a-4a1f-90af-6e7adf9ceb23/walkinggifresize_0001_Layer-6.png?v=1678336358515") 20 20, auto;
+  }
+}
+
+#btn {
+  position: absolute;
+  transition: 0.5s;
+  padding: 10px;
+  height: 40px;
+  width: 150px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.warningText {
+  font-size: 20px;
+  color: red;
+  animation: blinker 0.7s linear infinite;
+}
+
+.fridgeWarning:hover {
+  color: white;
+  animation: shake 1s infinite;
+  
+}
+
+@keyframes shake{
+    0%{
+      transform: translateX(0);
+      transform: rotate(0turn);
+    }
+    25%{
+      transform: translateX(25px);
+    }
+      
+    50%{
+      transform: translateX(-25px);
+      transform: rotate(0.25turn);
+    }
+    100%{
+      transform: translateX(0px);
+      transform: rotate(0turn);
+    }
+  }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
