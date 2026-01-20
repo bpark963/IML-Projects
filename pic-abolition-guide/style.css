@@ -1,0 +1,584 @@
+@font-face {
+  font-family: "AppleGaramond";
+  src: url(glitch-assets/AppleGaramond.ttf);
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  src: url(glitch-assets/Black.otf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  src: url(glitch-assets/Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  src: url(glitch-assets/Medium\ Display.otf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  src: url(glitch-assets/Roman\ Display.otf);
+  font-weight: normal;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:#121212
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* Intro Response */
+.container {
+  display: flex;
+  margin: 30px;
+  text-align: center;
+  
+}
+
+.input {
+  height: wrap-content;
+  width: 475px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "AppleGaramond";
+  font-size: 40px;
+}
+
+.share-button {
+  height: 85px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 5px 15px 5px 15px;
+  font-family: "AppleGaramond";
+  font-size: 25px;
+}
+
+.input-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#chat-container {
+  font-size: 30px;
+  margin: auto;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.response {
+  background-color: transparent;
+  color: #121212;
+  margin: 0.2em;
+/*   border: solid; */
+  border-radius: 15px;
+  box-shadow: 0 0 50px #ffffff;
+  font-family: "AppleGaramond";
+  font-size:90px;
+}
+
+/* Landing */
+
+.chapter-nav {
+  list-style: none;
+  padding-left: 0;
+  position: absolute;
+  width: 480px;
+  height: 190px;
+  right: 24px;
+  top: 44px;
+  font-family: "NeueHaasGrotesk";
+  font-weight: medium;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0.005em;
+}
+
+.nav-link {
+  color: #121212;
+}
+
+.nav-list {
+  margin: 8px 0px;
+}
+
+.main-title {
+  font-family: "NeueHaasGrotesk";
+  font-weight: black;
+  font-size: 120px;
+  line-height: 90%;
+  color: #121212;
+  position: absolute;
+  width: 687px;
+  height: 311px;
+  left: 44px;
+  top: 420px;
+}
+
+.main-title.hidden {
+  display:none;
+}
+
+.main-quote {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 0.015em;
+  position: absolute;
+  width: 729px;
+  height: 129px;
+  left: 132px;
+  top: 122px;
+}
+
+.main-quote.hidden {
+  display:none;
+}
+
+.main-graphic {
+  position: absolute;
+  width: 952px;
+  height: 248px;
+  right: 0px;
+  top: 326px;
+}
+
+.main-graphic.hidden {
+  display:none;
+}
+
+.right-arrow {
+  padding: 5px;
+  position: absolute;
+  left: 1224px;
+  top: 758px;
+}
+
+/* Sources & Resources */
+.top-logo {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-family: "NeueHaasGrotesk";
+  font-weight: black;
+  line-height: 90%;
+  color: #121212;
+}
+
+.top-logo-link {
+  color: #121212;
+  text-decoration: none;
+}
+
+.sources-title {
+  font-family: "NeueHaasGrotesk";
+  font-weight: black;
+  font-size: 50px;
+  text-align: center;
+  color: #121212
+}
+.source-nav {
+  display: flex;
+  gap: 20vw;
+}
+
+.source-div {
+  margin: 0 auto;
+  width: 950px;
+}
+
+.source-tab {
+  list-style: none;
+  padding-left: 0;
+}
+
+.source-list-sub {
+  font-family: "NeueHaasGrotesk";
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
+  padding-bottom: 19px;
+  color: #121212
+}
+
+.source-list {
+  font-family: "NeueHaasGrotesk";
+  font-weight: medium;
+  font-size: 30px;
+  text-decoration: none;
+  padding-bottom: 19px;
+  color:#121212
+}
+
+a.source-link:hover {
+  color:#00ac26;
+}
+
+/* What is the PIC? */
+.red-text {
+  color:#CD0000
+}
+
+.pic-body {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 27px;
+  line-height:110%;
+  position:absolute;
+  width:582px;
+  height:683px;
+  top:120px;
+  right:40px
+}
+
+.pic-title {
+  font-family: "NeueHaasGrotesk";
+  font-weight: black;
+  font-size: 80px;
+  line-height:90%;
+  width:692px;
+  position:absolute;
+  top: 40px;
+  right: 40px;
+  margin: 0px;
+}
+
+.pic-definition {
+  font-family: "NeueHaasGrotesk";
+  font-weight: medium;
+  font-size: 36px;
+  line-height:105%;
+  letter-spacing: 0.01em;
+  width:700px;
+  position:absolute;
+  left:40px;
+  top:120px;
+}
+
+.pic-img {
+  width:700px;
+  position:absolute;
+  left:40px;
+  bottom:30px;
+}
+
+.small-right-arrow {
+  position:absolute;
+  bottom:30px;
+  right:40px;
+}
+
+/* Transformative Intro */
+.abol-title {
+  font-family: "NeueHaasGrotesk";
+  font-weight: black;
+  font-size: 80px;
+  line-height:90%;
+  width:480px;
+  color:white;
+  background:#DC0000;
+  padding: 10px;
+  position:absolute;
+  left:452px;
+  top:430px;
+  z-index:1;
+}
+
+.abol-definition {
+  font-family: "NeueHaasGrotesk";
+  font-weight: medium;
+  font-size: 40px;
+  line-height:105%;
+  text-align:justify;
+  width:350px;
+  height:514px;
+  position:absolute;
+  left:40px;
+  top:183px;
+}
+
+.abol-body {
+ font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 27px;
+  line-height:110%;
+  position:absolute;
+  width:340px;
+  height:750px;
+  top:40px;
+  right:40px 
+}
+
+.abol-img {
+  width:550px;
+  height:auto;
+  display: block;
+  position:absolute;
+  top:46px;
+  left:433px
+  
+}
+
+/* Question */
+
+.title-underline {
+  text-decoration:underline;
+}
+.center {
+  position: relative;
+  left:280px;
+  top:20px;
+}
+
+.border {
+  font-family: "NeueHaasGrotesk";
+  font-weight: bold;
+  font-size: 80px;
+  line-height:110%;
+  width:857px;
+  text-align:center;
+  border:solid;
+  border-radius: 15px;
+
+}
+
+.border:hover {
+  background: white;
+  box-shadow: 0 0 100px #DC0000;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  outline: none;
+}
+
+/* Transformative Intro */
+#rotateText {
+  width: 600px;
+  height: 600px;
+  padding-left: 55px;
+}
+
+.down-arrow {
+  padding: 5px;
+}
+
+/* Transformative Explanationn */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  transform: scale(1, 1.75);
+}
+
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.frame-4.hidden {
+  display:none;
+}
+
+.frame-5.hidden {
+  display:none;
+}
+
+.frame-6.hidden {
+  display:none;
+}
+
+.text-2 {
+  font-family: "NeueHaasGrotesk";
+  font-weight: 900;
+  font-size: 130px;
+  line-height: 120px;
+  color: #00ac26;
+}
+
+.text-1 {
+  font-family: "NeueHaasGrotesk";
+  font-weight: 900;
+  font-size: 130px;
+  line-height: 120px;
+  color: #006717;
+}
+
+.background-text {
+  background-image: url("glitch-assets/retributive\ justice.svg");
+  background-repeat: no-repeat;
+  margin-left: 40px;
+  margin-top: 40px;
+  height: 90vh;
+}
+
+.trans-body-1 {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 23px;
+  line-height:110%;
+  width:529px;
+  height:209px;
+  position:absolute;
+  left:54px;
+  top:1007px;
+  z-index:1;
+}
+
+.trans-body-2 {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 23px;
+  line-height:110%;
+  width:548px;
+  height:150px;
+  letter-spacing: 0.005em;
+  position:absolute;
+  top:1450px;
+  left:80px;
+  z-index:1;
+}
+
+.trans-body-3 {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 23px;
+  line-height:110%;
+  width:493px;
+  height:720px;
+  position:absolute;
+  left:857px;
+  top:898px;
+  z-index:1;
+  
+}
+
+.trans-expl-img {
+  position:absolute;
+  left:379px;
+  top:1150px;
+  opacity:0;
+}
+
+.small-right-arrow-2 {
+  position:absolute;
+  top:1550px;
+  right:40px;
+  
+}
+
+p em {
+  font-weight: bold;
+  font-size:40px;
+  font-style:normal;
+  text-decoration:underline;
+}
+
+/* About */
+.about-title {
+  font-family: "NeueHaasGrotesk";
+  font-weight: black;
+  font-size: 50px;
+  text-align: center;
+  color: #121212;
+}
+
+.about-body {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 110%;
+  color: #121212;
+  letter-spacing: 0.01em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Response After */
+.center-response {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.center-response p {
+  text-align: center;
+  width: 600px;
+  padding: 10px;
+} 
+
+.question-text {
+  width:100vw;
+  height:100vh;
+}
+
+.question-text:hover {
+  text-shadow: 0px 0px 8px grey;
+}
+
+.response-question {
+  font-family: "NeueHaasGrotesk";
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 110%;
+  color: #121212;
+  letter-spacing: 0.01em;
+}
+
+

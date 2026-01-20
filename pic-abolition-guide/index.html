@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>What Makes You Feel Safe?</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+
+    <!-- Include firebase scripts from CDN      -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- This input form controls submission of text input -->
+    <div class="container">
+      <div class="input-container">
+        <form id="text-input-form" onsubmit="return false">
+          <input
+            class="input"
+            type="text"
+            id="text-input-entry"
+            placeholder="tell me: what makes you feel safe?"
+          />
+          <input
+            class="share-button"
+            type="submit"
+            id="text-input-submit"
+            onclick="submitlock()"
+            value="Share"
+          />
+        </form>
+      </div>
+
+      <div id="chat-container"></div>
+    </div>
+    <div class="small-right-arrow">
+      <a href="response-after.html">
+        <svg
+          width="84"
+          height="38"
+          viewbox="0 0 84 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M66.9404 0.755703L83.2494 17.1756C84.2502 18.1832 84.2502 19.8168 83.2494 20.8244L66.9404 37.2443C65.9396 38.2519 64.317 38.2519 63.3162 37.2443C62.3154 36.2367 62.3154 34.603 63.3162 33.5954L75.2503 21.5801H0V16.4199H75.2503L63.3162 4.40456C62.3154 3.39696 62.3154 1.76331 63.3162 0.755703C64.317 -0.251901 65.9396 -0.251901 66.9404 0.755703Z"
+            fill="#121212"
+          />
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>
