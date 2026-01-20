@@ -4,12 +4,12 @@ cursor: none;
 
 @font-face {
   font-family: "Lisbeth";
-  src: url("https://cdn.glitch.global/ffa1570d-2759-4df4-b133-7032011b57c9/Lisbeth_Display.otf?v=1683009502917");
+  src: url("fonts/Lisbeth_5.otf");
 }
 
 @font-face {
   font-family: "NeueHaasGrotesk";
-  src: url("https://cdn.glitch.global/ffa1570d-2759-4df4-b133-7032011b57c9/NeueHaasRegular.otf?v=1683009507638");
+  src: url("fonts/Neue_Haas.otf");
 }
 
 body {
